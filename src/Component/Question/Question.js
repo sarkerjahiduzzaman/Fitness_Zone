@@ -25,6 +25,23 @@ In class-based components, we can access props using the this.props object. If w
                 </p>
             </div>
 
+            <div>
+                <h1>Use Efeect Work Station with out API Load ?</h1>
+                <h4> 1 .Run useEffect on State Change :</h4>
+                <p>By default, useEffect runs after every render, but it’s also perfect for running some code in response to a state change. You can limit when the effect runs by passing the second argument to useEffect.
+
+Think of the second argument as an array of “dependencies” – variables that, if changed, the effect should rerun. These can be any kind of variable: props, state, or anything else.</p>
+                <h4> 2 . Run useEffect When a Prop Changes :</h4>
+                <p>Just as we were able to set up useEffect to run when a state variable changed, the same can be done with props. Remember theyre all regular variables! useEffect can trigger on any of them.
+
+In this example, the PropChangeWatch component is receiving 2 props , and its effect will only run when the value of a changes because were passing an array containing [a] as the second argument.</p>
+                <h4>3 . Focus On Mount :</h4>
+                <p>Sometimes you just want to do one tiny thing at mount time, and doing that one little thing requires rewriting a function as a class.
+In this example, lets look at how you can focus an input control upon first render, using useEffect combined with the useRef hook.</p>
+
+
+
+</div>
 
         </div>
     );
